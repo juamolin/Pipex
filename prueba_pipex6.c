@@ -25,7 +25,7 @@ int	ft_dup2(int olfd, int newfd)
 
 int	main(void)
 {
-	int	fd = open("prueba.txt", O_WRONLY | O_CREAT | O_TRUNC);
+	int	fd = open("prueba.txt", O_WRONLY | O_TRUNC, 0644);
 	if (fd == -1)
 	{
 		perror("open");
